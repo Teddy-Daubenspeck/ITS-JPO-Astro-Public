@@ -3,7 +3,7 @@ import PageLayout from "@/src/layouts/PageLayout.astro";
 
 import ProgramBanner from "@/src/components/programs/ProgramBanner.astro";
 import ProgramLayout from "@/src/components/programs/ProgramLayout.astro";
-import banner from "@/src/assets/images/intersection-safety/banner.jpg";
+import banner from "@/src/assets/images/strategic-technology-for-roadway-safety/banner.jpg";
 import ProgramMenu from "@/src/components/programs/ProgramMenu.astro";
 import type { ChildNavigationItem } from "@/src/types";
 import "@/src/styles/programs.css";
@@ -29,24 +29,24 @@ const description = `
 const items: ChildNavigationItem[] = [
   {
     name: "Overview",
-    url: "/research-areas/intersection-safety"
+    url: "/research-areas/strategic-technology-for-roadway-safety"
   },
   {
     name: "Intersection Safety Challenge",
-    url: "/research-areas/intersection-safety/challenge"
+    url: "/research-areas/strategic-technology-for-roadway-safety/challenge"
   },
   {
     name: "Intersection Safety Systems",
-    url: "/research-areas/intersection-safety/systems"
+    url: "/research-areas/strategic-technology-for-roadway-safety/systems"
   }
 ]
 ---
 <PageLayout
-  title="Intersection Safety"
+  title="Strategic Technology for Roadway Safety"
   keywords={keywords}
   description={description}
    bannerImage={banner}
->  <Fragment slot="banner"> Intersection Safety </Fragment>
+>  <Fragment slot="banner"> Strategic Technology for Roadway Safety </Fragment>
 
  
   <slot/>

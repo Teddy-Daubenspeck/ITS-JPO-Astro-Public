@@ -1,0 +1,121 @@
+---
+import ProgramSection from "@/src/components/programs/ProgramSection.astro";
+import Layout from "./_layout.astro";
+import Card from "@/src/components/programs/card/Card.astro";
+import CardBody from "@/src/components/programs/card/CardBody.astro";
+import issLogo from "@/src/assets/images/strategic-technology-for-roadway-safety/iss-logo.png";
+import { Image } from "astro:assets";
+import BoxArrowUpRightIcon from "@/src/components/programs/icons/BoxArrowUpRightIcon.astro";
+import CardFooter from "@/src/components/programs/card/CardFooter.astro";
+---
+<style>
+  .resource-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--size);
+  }
+
+  .resource-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .resource-card-title {
+    text-transform: none;
+  }
+  .resource-card-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+  }
+  .resource-button {
+    border: 1px solid #dee2e6;
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: black;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-duration) ease-in-out;
+  }
+  .resource-button::after {
+    content: "";
+  }
+  .resource-button:hover {
+    font-weight: 600;
+    background: #dee2e6;
+  }
+
+  .resource-link-container {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .callout-box {
+    background-color: #072e55;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .callout-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .callout-body {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+
+  .callout-button {
+    display: inline-block;
+    background-color: #efbd27;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+  .callout-button:hover {
+    background-color: #66a3cc;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  @media (min-width: 1200px) {
+    .resource-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+<Layout>
+  <main class="program-main">
+    <ProgramSection>
+      <h2 class="program-title-lg">
+        National Safety Analysis
+      </h2>
+      <p>
+        National Safety Analysis demonstrated how ITS can help address many of today’s most common roadway safety challenges. Using National Highway Traffic Safety Administration (NHTSA) Fatality Analysis Reporting System (FARS) and Crash Report Sampling System (CRSS) data covering fatal and serious injury crashes, respectively, from 2019–2023, the analysis identified common crash types, characteristics, and trends. It then matched the identified crash patterns to proven ITS strategies, drawing on evidence from real-world case studies. This report provides transportation and safety professionals with information about ITS safety technologies that are flexible, adaptable, and often more cost-effective compared to traditional safety countermeasures (e.g., geometric design changes). Such technologies can serve as standalone solutions or complement existing infrastructure- and/or operations-based approaches to further improve roadway safety outcomes.​
+      </p>
+      <h2 class="program-title-lg">
+        Intersection and Corridor Safety Analysis
+      </h2>
+      <p>
+        Fatality Analysis Reporting System (FARS) is a nationwide census of yearly data that documents all motor vehicle crashes that result in at least one fatality within 30 days of the crash. Each crash includes geographic coordinates (latitude and longitude), allowing crashes to be mapped to specific intersections and corridors based on a defined threshold. Both intersection and corridor analyses used FARS data between 2019-2023 (the most recent 5 years of publicly available data). The goal of the analysis is to identify intersections and corridors with high fatal crash risk for targeted outreach and/or to be considered for future DOT pilots/implementations.​
+      </p>
+    </ProgramSection>
+  </main>
+</Layout>

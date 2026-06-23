@@ -4,7 +4,7 @@ import Layout from "./_layout.astro";
 import Card from "@/src/components/programs/card/Card.astro";
 import CardHeader from "@/src/components/programs/card/CardHeader.astro";
 import CardBody from "@/src/components/programs/card/CardBody.astro";
-import iscLogo from "@/src/assets/images/intersection-safety/isc-logo.png";
+import iscLogo from "@/src/assets/images/strategic-technology-for-roadway-safety/isc-logo.png";
 import { Image } from "astro:assets";
 import Link from "@/src/components/Link.astro";
 import CardFooter from "@/src/components/programs/card/CardFooter.astro";
@@ -13,6 +13,7 @@ import PdfIcon from "@/src/components/programs/icons/PdfIcon.astro";
 import FilmIcon from "@/src/components/programs/icons/FilmIcon.astro";
 import LinkIcon from "@/src/components/programs/icons/LinkIcon.astro";
 import base_url from "@/src/lib/base_url";
+import BoxArrowUpRightIcon from "@/src/components/programs/icons/BoxArrowUpRightIcon.astro";
 ---
 
 <style>
@@ -409,7 +410,7 @@ import base_url from "@/src/lib/base_url";
               </p>
               <p class="program-text">
                 Interested users can download sample data and request access to the full challenge dataset from the
-                <Link isExternal href="https://data.transportation.gov/Roadways-and-Bridges/intersection-safety-Stage-1B-Sample/vq7s-mv3v/about_data"> U.S. DOT's public data portal </Link>.
+                <Link isExternal href="https://data.transportation.gov/Roadways-and-Bridges/strategic-technology-for-roadway-safety-Stage-1B-Sample/vq7s-mv3v/about_data"> U.S. DOT's public data portal </Link>.
               </p>
             </div>
             <div class="data-collection-video-container">
@@ -741,7 +742,7 @@ import base_url from "@/src/lib/base_url";
           </CardHeader>
           <CardFooter>
             <div class="resource-link-container px-2">
-              <a class="resource-button" rel="noopener noreferrer" target="_blank" href={base_url("/assets/intersection-safety/ISS_Webinar_20260324_final_508.pdf")}>
+              <a class="resource-button" rel="noopener noreferrer" target="_blank" href={base_url("/assets/strategic-technology-for-roadway-safety/ISS_Webinar_20260324_final_508.pdf")}>
                 <PdfIcon size={12} />
                 Presentation Material
               </a>
@@ -826,7 +827,7 @@ import base_url from "@/src/lib/base_url";
           </CardBody>
           <CardFooter>
             <div class="resource-link-container px-2">
-              <a class="resource-button" rel="noopener noreferrer" target="_blank" href={base_url("/assets/intersection-safety/USDOT_IntersectionSafetyWebinar3.pdf")}>
+              <a class="resource-button" rel="noopener noreferrer" target="_blank" href={base_url("/assets/strategic-technology-for-roadway-safety/USDOT_IntersectionSafetyWebinar3.pdf")}>
                 <PdfIcon size={12} />
                 Presentation Material
               </a>
@@ -851,7 +852,7 @@ import base_url from "@/src/lib/base_url";
           </CardHeader>
           <CardFooter>
             <div class="resource-link-container px-2">
-              <a class="resource-button" rel="noopener noreferrer" target="_blank" href={base_url("/assets/intersection-safety/Intersection_Safety_Webinar.pdf")}>
+              <a class="resource-button" rel="noopener noreferrer" target="_blank" href={base_url("/assets/strategic-technology-for-roadway-safety/Intersection_Safety_Webinar.pdf")}>
                 <PdfIcon size={12} />
                 Presentation Material
               </a>
@@ -860,6 +861,66 @@ import base_url from "@/src/lib/base_url";
                 rel="noopener noreferrer" 
                 target="_blank"
                 href="https://itsa.adobeconnect.com/p9rpflh67mnj/"
+              >
+                <FilmIcon size={12} />
+                Recording
+              </a> -->
+            </div>
+          </CardFooter>
+        </Card>
+        <Card shadow="sm">
+          <CardBody>
+            <div class="resource-card-header p-2">
+              <h3 class="resource-card-title">Enhancing the Safety of Vulnerable Road Users at Intersections</h3>
+              <p class="resource-card-subtitle">Report | February 2023</p>
+            </div>
+          </CardBody>
+          <CardFooter>
+            <div class="resource-link-container px-2">
+              <a 
+                class="resource-button" 
+                href="https://rosap.ntl.bts.gov/view/dot/66622" 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <BoxArrowUpRightIcon size={12} />
+                Summary Report
+              </a>
+              <a 
+                class="resource-button" 
+                href="https://www.federalregister.gov/documents/2022/09/16/2022-20188/enhancing-the-safety-of-vulnerable-road-users-at-intersections-request-for-information" 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <BoxArrowUpRightIcon size={12} />
+                Request for Information (RFI)
+              </a>
+            </div>
+          </CardFooter>
+        </Card>
+        <Card shadow="sm">
+          <CardBody>
+            <div class="resource-card-header p-2">
+              <h3 class="resource-card-title">Enhancing the Safety of Vulnerable Road Users at Intersections</h3>
+              <p class="resource-card-subtitle">Webinar | March 17, 2023</p>
+            </div>
+          </CardBody>
+          <CardFooter>
+            <div class="resource-link-container px-2">
+              <a 
+                class="resource-button" 
+                href={base_url("/assets/strategic-technology-for-roadway-safety/USDOT_Intersection_Safety_Webinar.pdf")} 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+                <PdfIcon size={12}/>
+                Presentation Material
+              </a>
+              <!-- <a 
+                class="resource-button" 
+                href="https://itsa.adobeconnect.com/pzkh0m71kitt/" 
+                rel="noopener noreferrer" 
+                target="_blank"
               >
                 <FilmIcon size={12} />
                 Recording

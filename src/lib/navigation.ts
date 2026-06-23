@@ -130,21 +130,25 @@ export const navigation: NavigationItem[] = [
       },
       { name: "Interoperable Connectivity/Spectrum", url: "/research-areas/Interoperable-Connectivity-Spectrum" },
       {
-        name: "Intersection Safety",
-        url: "/research-areas/intersection-safety",
+        name: "Strategic Technology for Roadway Safety",
+        url: "/research-areas/strategic-technology-for-roadway-safety",
         pages: [
           {
             name: "Overview",
-            url: "/research-areas/intersection-safety",
+            url: "/research-areas/strategic-technology-for-roadway-safety",
           },
           {
             name: "Intersection Safety Challenge",
-            url: "/research-areas/intersection-safety/challenge",
+            url: "/research-areas/strategic-technology-for-roadway-safety/challenge",
           },
           {
             name: "Intersection Safety Systems",
-            url: "/research-areas/intersection-safety/systems",
+            url: "/research-areas/strategic-technology-for-roadway-safety/systems",
           },
+          {
+            name: "Safety Analysis",
+            url: "/research-areas/strategic-technology-for-roadway-safety/analysis",
+          }
         ],
       },
       {
